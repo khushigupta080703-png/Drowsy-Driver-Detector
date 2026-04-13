@@ -1,0 +1,7 @@
+opencv-python
+dlib
+numpy
+pandas
+pygame
+flask
+flask-socketio
