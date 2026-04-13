@@ -1,4 +1,5 @@
 # Drowsy-Driver-Detector
+
 ## 🗓️ Daily Progress
 
 ### Day 1 — April 13, 2026 ✅
