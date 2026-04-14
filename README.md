@@ -83,7 +83,7 @@ drowsy-driver-detector/
 | Day | Task | Status |
 |-----|------|--------|
 | Day 1 | Project setup + GitHub | ✅ Done |
-| Day 2 | Webcam feed | ⏳ |
+| Day 2 | Webcam feed with OpenCV | ✅ Done |
 | Day 3 | Face detection | ⏳ |
 | Day 4 | Facial landmarks | ⏳ |
 | Day 5 | EAR formula | ⏳ |
@@ -124,7 +124,34 @@ python detector.py
 ---
 
 ## 👨‍💻 Author
+
+
+
 Built in 20 days as a portfolio project.
 Following #100DaysOfCode challenge.
 
+---
 
+## 📸 Day 2 — Webcam Feed
+
+### What I built
+A live webcam feed using OpenCV that displays:
+- Real-time FPS counter
+- Frame counter
+- Status label (AWAKE / DROWSY)
+- Mirror flip for natural feel
+
+### Code snippet
+```python
+cap = cv2.VideoCapture(0)
+ret, frame = cap.read()
+frame = cv2.flip(frame, 1)
+cv2.imshow("Drowsy Driver Detector", frame)
+```
+
+### What I learned
+- How OpenCV captures webcam frames
+- What BGR color format means
+- How to calculate FPS
+- How cv2.putText() draws on frames
+- 
