@@ -84,7 +84,7 @@ drowsy-driver-detector/
 |-----|------|--------|
 | Day 1 | Project setup + GitHub | ✅ Done |
 | Day 2 | Webcam feed with OpenCV | ✅ Done |
-| Day 3 | Face detection | ⏳ |
+| Day 3 | Face detection with dlib | ✅ Done |
 | Day 4 | Facial landmarks | ⏳ |
 | Day 5 | EAR formula | ⏳ |
 | Day 6 | Drowsiness alert | ⏳ |
@@ -154,4 +154,19 @@ cv2.imshow("Drowsy Driver Detector", frame)
 - What BGR color format means
 - How to calculate FPS
 - How cv2.putText() draws on frames
-- 
+
+ 
+ ### Day 3 — Face Detection
+
+What I built:
+- Real-time face detection using dlib HOG detector
+- Green bounding box drawn around detected face
+- Corner dots for visual style
+- NO FACE warning when face not visible
+- Session summary with detection rate
+
+What I learned:
+- How dlib's HOG face detector works
+- Why we convert to grayscale before detection
+- What bounding box coordinates mean (left, top, right, bottom)
+- How detection rate is calculated
